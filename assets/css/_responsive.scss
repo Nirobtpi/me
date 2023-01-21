@@ -1,0 +1,215 @@
+@media all and (max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-area .top-box .row .text {
+        flex-basis: 70%;
+    }
+
+    .hotline {
+        display: none;
+    }
+
+    .header-area .menubar .menu-area .login .login-form .lock li a {
+        font-size: 1.4rem;
+    }
+
+    .header-area .menubar .menu-area nav ul li .drop {
+        width: 70rem;
+    }
+
+    .hide-arro {
+        display: none;
+    }
+
+    .header-area .search-area .row .cate-form form .btn {
+        position: absolute;
+    }
+
+    .header-area .search-area .row .categories {
+        flex-basis: 19%;
+    }
+
+    .header-area .search-area .row .categories a {
+        font-size: 1.4rem;
+    }
+
+    .header-area .search-area .row .cate-form form #select {
+        padding: 1rem 1rem;
+    }
+
+    .header-area .search-area .row .categories::before {
+        left: 15rem;
+    }
+
+    .header-area .search-area .row .cate-form form input {
+        width: 40%;
+    }
+
+    .show-bag {
+        margin-left: 3rem;
+    }
+
+    .header-area .search-area .row .icon ul li a {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+@media all and (max-width:991px) {
+    .header-area .top-box .row .text .form-area .account .user {
+        display: flex;
+    }
+
+    .header-area .top-box .row .text h5 {
+        display: none;
+    }
+
+    .header-area .menubar .menu-area .login .login-form .lock {
+        display: none;
+    }
+
+    .header-area .menubar .menu-area {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .header-area .menubar .menu-area nav {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        height: 100vh;
+        background: var(--color5);
+        z-index: 9999;
+        overflow: scroll;
+        transition: 0.5s all ease;
+    }
+
+
+    .show-nav {
+        left: 0 !important;
+    }
+
+    .header-area .menubar .menu-area nav ul {
+        flex-direction: column;
+        padding: 3rem 0rem 0rem 0rem;
+        overflow: hidden;
+    }
+
+    .header-area .menubar .menu-area nav ul .cross {
+        display: block;
+    }
+
+    .header-area .menubar .menu-area nav ul li {
+        position: relative;
+        padding: 2rem 0rem 2rem 0rem;
+
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-bottom: 0.1rem solid var(--color1);
+        }
+    }
+
+    .header-area .menubar .menu-area nav ul li:hover .drop {
+        display: none;
+    }
+
+    .show-drop {
+        display: block !important;
+    }
+
+    // .header-area .menubar .menu-area nav ul li a {
+    //     display: flex;
+    //     align-items: center;
+    // }
+    .header-area .menubar .menu-area nav ul li i {
+        top: 2.7rem;
+        right: 1.2rem;
+    }
+
+    .header-area .menubar .menu-area nav ul li .fa-sort-up {
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        right: 1.2rem;
+    }
+
+    // second css 
+    .header-area .menubar .menu-area nav ul li .drop .second {
+        flex-direction: column;
+    }
+
+    .header-area .menubar .menu-area nav ul li .drop ul {
+        width: 80%;
+        background: var(--color2);
+    }
+
+    // second css 
+
+    .header-area .menubar .menu-area nav ul li .drop {
+        width: 29.7rem;
+        position: inherit;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 95%;
+        background: var(--color1);
+    }
+
+    .fa-solid.fa-sort-down.i-hide {
+        display: none;
+        position: relative;
+    }
+
+    .fa-solid.fa-sort-up.i-show {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .show-bag {
+        display: none;
+    }
+
+    .header-area .search-area .row .icon ul .show-bag-pw {
+        display: flex;
+    }
+
+    .header-area .menubar .menu-area .logo .show-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header-area .search-area .row .cate-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-area .search-area .row .cate-form form #select {
+        display: none;
+    }
+
+    .header-area .search-area .row .cate-form form input {
+        width: 100%;
+    }
+
+    .header-area .search-area .row .categories {
+        background: transparent;
+    }
+
+    .fa-angle-down {
+        display: none;
+    }
+
+    .header-area .search-area .row .categories::after {
+        display: none;
+    }
+    .header-area .search-area .row .categories::before {
+        display: none;
+    }
+}

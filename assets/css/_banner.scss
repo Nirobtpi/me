@@ -1,0 +1,228 @@
+.banner-area {
+    width: 100%;
+    position: relative;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        //    align-items: center;
+
+        .col-1 {
+            background: var(--color2);
+            flex-basis: 19%;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
+
+
+            ul {
+                // padding: 1.5rem;
+
+                li {
+                    padding: 1.2rem 1rem;
+
+                    &:hover {
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                    }
+
+                    a {
+                        display: block;
+                        color: var(--color3);
+                        font-size: 1.4rem;
+                        font-weight: 400;
+
+                        i {
+                            margin-right: 0.5rem;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+
+                .item-drp {
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    // height: 0rem;
+
+                    span {
+                        display: inline-block;
+                        margin-left: 1rem;
+                        font-size: 1.4rem;
+                        color: var(--color3);
+                    }
+
+                    i {
+                        color: var(--color3);
+                        font-size: 1.6rem;
+                        width: 2rem;
+                    }
+
+                    .fa-square-minus {
+                        display: none;
+                        // position: absolute;
+                        // left: 1rem;
+                    }
+
+                    .drp-hide {
+                        display: none !important;
+                    }
+
+                    .fa-solid.fa-square-minus.drp-show {
+                        display: inline-block !important;
+                        
+                    }
+
+                    .drp-2 {
+                        position: inherit;
+                        top: -22rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        // background-color: red;
+                        // display: none;
+                        padding-bottom: 2rem;
+                        transition: 0.5s;
+                        height: 0;
+
+                    }
+
+                    .drp-3 {
+                        display: block !important;
+                        top: 0;
+                        opacity: 1;
+                        visibility: visible;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+
+        .col-2 {
+            flex-basis: 78%;
+            padding: 3rem 0;
+            overflow: hidden;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                .col-7 {
+                    flex-basis: 70%;
+                    overflow: hidden;
+
+                    #myCarousel {
+                        .item {
+
+                            img {
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .col-3 {
+                    flex-basis: 28%;
+                    margin-top: 1rem;
+
+                    .img {
+                        margin-bottom: 2rem;
+                        position: relative;
+                        z-index: 1;
+
+                        .extend {
+                            display: block;
+                            position: relative;
+                            z-index: 1;
+                            overflow: hidden;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                top: 0;
+                                left: 0%;
+                                right: 0;
+                                margin: auto;
+                                width: 0%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.5);
+                                z-index: 1;
+                                transition: 0.5s;
+                            }
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &:hover a::before {
+                            width: 100%;
+                        }
+                    }
+
+
+                }
+            }
+
+            .full {
+                padding-top: 3rem;
+                .img-2 {
+                    // @extend .img ;
+                    a {
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                        overflow: hidden;
+                        // @extend .extend ;
+                        
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0%;
+                            right: 0;
+                            margin: auto;
+                            width: 0%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            z-index: 1;
+                            transition: 0.5s;
+                            
+                        }
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:hover a::before {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#myCarousel .owl-dots .owl-dot span {
+    width: 40px;
+    height: 5px;
+    background: var(--color2);
+}
+
+#myCarousel .owl-dots .owl-dot.active span {
+    background: var(--color1);
+}
+
+#myCarousel .owl-nav.disabled+.owl-dots {
+    margin-top: -35px;
+    z-index: 11111;
+    position: relative;
+}
